@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNSHIP MATCHING SYSTEM | Webscraper-Based Internship Finding System</title>
+    <meta name="description"
+        content="Discover internships effortlessly. A centralized platform powered by automated web scraping for fresh graduates to easily find their next career opportunity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="glass-nav fade-in delay-1">
+        <div class="logo">INTERNSHIP <span>MATCHING SYSTEM</span></div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#research">Research</a></li>
+        </ul>
+        <button class="cta-btn">Read SRS</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content fade-in delay-2">
+            <div class="badge">Research & Development Project</div>
+            <h1 class="hero-title">Automating the Hunt for Your Next <span class="gradient-text">Internship.</span></h1>
+            <p class="hero-subtitle">A powerful webscraper-based system designed to aggregate, organize, and simplify
+                the search for fresh graduates across the internet.</p>
+            <div class="hero-actions">
+                <button class="primary-btn pulse-glow" onclick="window.location.href='https://research-website-xvbtfpwtgeaggkbqggndk5.streamlit.app'">Explore Platform</button>
+                <button class="secondary-btn">View Architecture</button>
+            </div>
+            <div class="stats glass-card fade-in delay-3">
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Jobs Scraped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Real-time</span>
+                    <span class="stat-label">Data Sync</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">Accuracy Target</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual fade-in delay-4">
+            <div class="mockup-window glass-card floating">
+                <div class="mockup-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="mockup-body">
+                    <div class="code-line"><span class="keyword">const</span> <span class="variable">scraper</span> =
+                        <span class="keyword">new</span> <span class="class">WebScraper</span>();</div>
+                    <div class="code-line"><span class="variable">scraper</span>.<span
+                            class="method">target</span>(<span class="string">'careers.google.com'</span>);</div>
+                    <div class="code-line"><span class="keyword">await</span> <span
+                            class="variable">scraper</span>.<span class="method">extract</span>(<span
+                            class="string">'internships'</span>);</div>
+                    <div class="code-line"><span class="comment">// Normalizing data...</span></div>
+                    <div class="code-line"><span class="keyword">return</span> <span
+                            class="variable">PlatformReadyData</span>;</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <h2 class="section-title fade-in">Key Components</h2>
+        <div class="features-grid">
+            <div class="feature-card glass-card hover-lift fade-in">
+                <div class="feature-icon scrape-icon"></div>
+                <h3>Automated Scraper Bot</h3>
+                <p>Scheduled data-mining scripts autonomously extract listings from target university portals and
+                    company pages using dynamic scraping techniques and OCR.</p>
+            </div>
+            <div class="feature-card glass-card hover-lift fade-in delay-1">
+                <div class="feature-icon db-icon"></div>
+                <h3>Intelligent Data Engine</h3>
+                <p>Processes diverse HTML DOM structures, normalizes fields, and removes duplicates to ensure high data
+                    consistency in our centralized database.</p>
+            </div>
+            <div class="feature-card glass-card hover-lift fade-in delay-2">
+                <div class="feature-icon ui-icon"></div>
+                <h3>Intuitive Discovery OS</h3>
+                <p>A fast, mobile-friendly interface giving graduates powerful search, filtering, and instant
+                    redirection capabilities to the original sources.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer glass-nav">
+        <p>&copy; 2026 Ajithkumar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
