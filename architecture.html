@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture | INTERNSHIP MATCHING SYSTEM</title>
+    <meta name="description"
+        content="View the system architecture of our automated web-scraper based internship finding system.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        .architecture-header {
+            padding: 10rem 5% 4rem;
+            text-align: center;
+        }
+
+        .layer-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            background: linear-gradient(to right, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .features-grid {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="glass-nav fade-in">
+        <div class="logo">INTERNSHIP <span>MATCHING SYSTEM</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="src/research_document.pdf" target="_blank">Research</a></li>
+        </ul>
+        <button class="cta-btn" onclick="window.location.href='index.html'">Back to Home</button>
+    </nav>
+
+    <header class="architecture-header">
+        <div class="badge fade-in delay-1">Technical Documentation</div>
+        <h1 class="hero-title fade-in delay-2">System <span class="gradient-text">Architecture.</span></h1>
+        <p class="hero-subtitle fade-in delay-3" style="max-width: 600px; margin: 0 auto;">A multi-layered system
+            designed for robust data acquisition, processing, intelligent mapping, and intuitive user presentation.</p>
+    </header>
+
+    <section class="features-section" style="padding-top: 2rem;">
+        <div class="features-grid">
+            <div class="feature-card glass-card hover-lift fade-in delay-1">
+                <div class="layer-icon">01</div>
+                <h3>Data Collection Layer</h3>
+                <p>Scheduled data-mining scripts autonomously extract public internship listings from targeted
+                    university portals, career platforms, and company web pages, mimicking precise human interactions.
+                </p>
+            </div>
+
+            <div class="feature-card glass-card hover-lift fade-in delay-2">
+                <div class="layer-icon">02</div>
+                <h3>Text Extraction Layer</h3>
+                <p>Utilizes robust OCR (Optical Character Recognition) technologies like Tesseract and dynamic layout
+                    interpreters to extract structured text directly from image-based job ads and complex DOM nodes.</p>
+            </div>
+
+            <div class="feature-card glass-card hover-lift fade-in delay-3">
+                <div class="layer-icon">03</div>
+                <h3>Data Processing Layer</h3>
+                <p>Normalizes extracted fields, filters irrelevant context, dynamically patches missing gaps via Natural
+                    Language Processing, and handles strict duplicate detection inside the central relational database.
+                </p>
+            </div>
+
+            <div class="feature-card glass-card hover-lift fade-in delay-4">
+                <div class="layer-icon">04</div>
+                <h3>Matching Layer</h3>
+                <p>Analyzes student profiles, resumes, and predefined job criterias against real-time normalized
+                    listings using term frequency weighting systems and skill map algorithms to discover best-fit
+                    opportunities.</p>
+            </div>
+
+            <div class="feature-card glass-card hover-lift fade-in delay-5">
+                <div class="layer-icon">05</div>
+                <h3>Presentation Layer</h3>
+                <p>A performant Streamlit-powered dashboard bridging our dataset to students, highlighting customized
+                    insights, extensive filtering, and rapid redirections back to application sources.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer glass-nav">
+        <p>&copy; 2026 INTERNSHIP MATCHING SYSTEM. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

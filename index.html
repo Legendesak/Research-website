@@ -26,9 +26,9 @@
         <ul class="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How it Works</a></li>
-            <li><a href="#research">Research</a></li>
+            <li><a href="src/research_document.pdf" target="_blank">Research</a></li>
         </ul>
-        <button class="cta-btn">Read SRS</button>
+        <button class="cta-btn" onclick="window.open('src/research_documentation.pdf', '_blank')">Read SRS</button>
     </nav>
 
     <header class="hero">
@@ -38,12 +38,15 @@
             <p class="hero-subtitle">A powerful webscraper-based system designed to aggregate, organize, and simplify
                 the search for fresh graduates across the internet.</p>
             <div class="hero-actions">
-                <button class="primary-btn pulse-glow" onclick="window.location.href='https://research-website-xvbtfpwtgeaggkbqggndk5.streamlit.app'">Explore Platform</button>
-                <button class="secondary-btn">View Architecture</button>
+                <button class="primary-btn pulse-glow"
+                    onclick="window.location.href='https://research-website-xvbtfpwtgeaggkbqggndk5.streamlit.app'">Explore
+                    Platform</button>
+                <button class="secondary-btn" onclick="window.location.href='architecture.html'">View
+                    Architecture</button>
             </div>
             <div class="stats glass-card fade-in delay-3">
                 <div class="stat-item">
-                    <span class="stat-number">10k+</span>
+                    <span class="stat-number">5k+</span>
                     <span class="stat-label">Jobs Scraped</span>
                 </div>
                 <div class="stat-item">
@@ -65,7 +68,8 @@
                 </div>
                 <div class="mockup-body">
                     <div class="code-line"><span class="keyword">const</span> <span class="variable">scraper</span> =
-                        <span class="keyword">new</span> <span class="class">WebScraper</span>();</div>
+                        <span class="keyword">new</span> <span class="class">WebScraper</span>();
+                    </div>
                     <div class="code-line"><span class="variable">scraper</span>.<span
                             class="method">target</span>(<span class="string">'careers.google.com'</span>);</div>
                     <div class="code-line"><span class="keyword">await</span> <span
