@@ -1,9 +1,11 @@
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-}
-
 document.addEventListener('DOMContentLoaded', () => {
+    // Add mobile toggle menu functionality
+    document.querySelectorAll('.menu-icon').forEach(icon => {
+        icon.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    });
+
     // Intersection Observer for scroll animations
     const observerOptions = {
         root: null,

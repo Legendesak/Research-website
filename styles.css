@@ -413,6 +413,7 @@ nav {
         background: rgba(10, 10, 15, 0.95);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -441,7 +442,9 @@ nav {
     color: var(--text-primary);
     padding: 0 10px;
     z-index: 101;
-    font-weight: 800;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .nav-links {
